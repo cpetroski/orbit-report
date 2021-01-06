@@ -22,8 +22,8 @@ constructor() {
         let fetchedSatellites = data.satellites;
 
         for (let i=0; i<=fetchedSatellites.length ; i++){
-          
           let satellites=new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);        
+          console.log(satellites)
           this.sourceList.push(satellites);
         }
      }.bind(this));
